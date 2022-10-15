@@ -7,17 +7,17 @@ import java.util.Set;
 public class Location implements GeoLocation {
 
     private final String name;
+    private final Set<GeoLocation> children;
     private GeoLocation parent;
-    private Set<GeoLocation> children;
 
     public Location(String name) {
         this.name = name;
+        this.children = new HashSet<>();
     }
 
     public Location(String name, GeoLocation parent) {
         this.name = name;
         this.parent = parent;
-        parent.addChild(this);
         this.children = new HashSet<>();
     }
 
@@ -44,12 +44,11 @@ public class Location implements GeoLocation {
     @Override
     public void addChild(GeoLocation child) {
         this.children.add(child);
-        child.setParent(this);
     }
 
     @Override
     public void logNode() {
-        System.out.println("Node " + name + "created.");
+        System.out.println("Node " + name + " created (parent: " + parent + ").");
     }
 
     @Override
@@ -63,5 +62,9 @@ public class Location implements GeoLocation {
     @Override
     public int hashCode() {
         return name != null ? name.hashCode() : 0;
+    }
+
+    public String toString() {
+        return this.name;
     }
 }
