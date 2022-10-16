@@ -10,12 +10,12 @@ public class LocationService {
         this.locationMap = locationMap;
     }
 
-    public boolean locationAbsent(GeoLocation location) {
-        return !locationMap.containsKey(location);
+    public boolean locationNotValid(GeoLocation child, GeoLocation parent) {
+        return !locationAbsent(child) && !parent.equals(locationMap.get(child));
     }
 
-    public boolean isLocationValid(GeoLocation child, GeoLocation parent) {
-        return locationAbsent(child) || parent.equals(locationMap.get(child));
+    public boolean locationAbsent(GeoLocation location) {
+        return !locationMap.containsKey(location);
     }
 
     public void addNodeToMap(GeoLocation location) {
@@ -23,8 +23,14 @@ public class LocationService {
         location.logNode();
     }
 
-    public boolean addDistinctNodes(List<GeoLocation> nodes, int idx) {
-        if (!isLocationValid(nodes.get(idx), nodes.get(idx - 1))) {
+    public void addDistinctNodes(List<GeoLocation> nodes) {
+        if (locationAbsent(nodes.get(nodes.size() - 1))) {
+            addNodesFromList(nodes, 1);
+        }
+    }
+
+    public boolean addNodesFromList(List<GeoLocation> nodes, int idx) {
+        if (locationNotValid(nodes.get(idx), nodes.get(idx - 1))) {
             return false;
         }
         if (idx == nodes.size() - 1) {
@@ -34,7 +40,7 @@ public class LocationService {
             }
             return false; // return here after making wrapper
         }
-        if (addDistinctNodes(nodes, idx + 1)) {
+        if (addNodesFromList(nodes, idx + 1)) {
             if (locationAbsent(nodes.get(idx))) {
                 addNode(nodes.get(idx), nodes.get(idx - 1));
             }
