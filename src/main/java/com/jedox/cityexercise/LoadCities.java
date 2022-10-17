@@ -24,9 +24,9 @@ public class LoadCities {
              Scanner scanner = new Scanner(fs)) {
             while (scanner.hasNext()) {
                 String[] line = scanner.nextLine().split(",");
-                GeoLocation continent = new Location(line[LoadCities.CONTINENT_IDX].trim(), root);
-                GeoLocation country = new Location(line[LoadCities.COUNTRY_IDX].trim());
-                GeoLocation city = new Location(line[LoadCities.CITY_IDX].trim());
+                GeoLocation continent = new Location(line[LoadCities.CONTINENT_IDX], root);
+                GeoLocation country = new Location(line[LoadCities.COUNTRY_IDX]);
+                GeoLocation city = new Location(line[LoadCities.CITY_IDX]);
                 locationService.addDistinctNodes(List.of(root, continent, country, city));
             }
         } catch (IOException e) {

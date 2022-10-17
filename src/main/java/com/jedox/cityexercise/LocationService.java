@@ -18,7 +18,7 @@ public class LocationService {
         return !locationMap.containsKey(location);
     }
 
-    public void addNodeToMap(GeoLocation location) {
+    private void addNodeToMap(GeoLocation location) {
         locationMap.put(location, location.getParent());
         location.logNode();
     }
@@ -29,7 +29,7 @@ public class LocationService {
         }
     }
 
-    public boolean addNodesFromList(List<GeoLocation> nodes, int idx) {
+    private boolean addNodesFromList(List<GeoLocation> nodes, int idx) {
         if (locationNotValid(nodes.get(idx), nodes.get(idx - 1))) {
             return false;
         }

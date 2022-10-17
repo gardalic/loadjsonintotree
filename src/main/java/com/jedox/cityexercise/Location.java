@@ -11,12 +11,12 @@ public class Location implements GeoLocation {
     private GeoLocation parent;
 
     public Location(String name) {
-        this.name = name;
+        this.name = name != null ? name.trim() : null;
         this.children = new HashSet<>();
     }
 
     public Location(String name, GeoLocation parent) {
-        this.name = name;
+        this.name = name != null ? name.trim() : null;
         this.parent = parent;
         this.children = new HashSet<>();
     }
