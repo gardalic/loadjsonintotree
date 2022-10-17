@@ -1,0 +1,170 @@
+[
+  {
+    "country": "Somaliland",
+    "city": "Hargeisa",
+    "latitude": 9.55,
+    "longitude": 44.05,
+    "flag": "NULL",
+    "continent": "Africa"
+  },
+  {
+    "country": "Somaliland",
+    "city": "Hargeisa",
+    "latitude": 9.55,
+    "longitude": 44.05,
+    "flag": "NULL",
+    "continent": "Antarctica"
+  },
+  {
+    "country": "South Georgia and South Sandwich Islands",
+    "city": "King Edward Point",
+    "latitude": -54.283333,
+    "longitude": -36.5,
+    "flag": "GS",
+    "continent": "Antarctica"
+  },
+  {
+    "country": "French Southern and Antarctic Lands",
+    "city": "Port-aux-Français",
+    "latitude": -49.35,
+    "longitude": 70.216667,
+    "flag": "TF",
+    "continent": "Antarctica"
+  },
+  {
+    "country": "Palestine",
+    "city": "Jerusalem",
+    "latitude": 31.766666666666666,
+    "longitude": 35.233333,
+    "flag": "PS",
+    "continent": "Asia"
+  },
+  {
+    "country": "Aland Islands",
+    "city": "Mariehamn",
+    "latitude": 60.116667,
+    "longitude": 19.9,
+    "flag": "AX",
+    "continent": "Europe"
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "city": "Yamoussoukro",
+    "latitude": 6.816666666666666,
+    "longitude": -5.266667,
+    "flag": "CI",
+    "continent": "Africa"
+  },
+  {
+    "country": "Croatia",
+    "city": "Zagreb",
+    "latitude": 45.8,
+    "longitude": 16,
+    "flag": "HR",
+    "continent": "Europe"
+  },
+  {
+    "country": "Cuba",
+    "city": "Havana",
+    "latitude": 23.116666666666667,
+    "longitude": -82.35,
+    "flag": "CU",
+    "continent": "North America"
+  },
+  {
+    "country": "Havana",
+    "city": "Cuba",
+    "latitude": 23.116666666666667,
+    "longitude": -82.35,
+    "flag": "CU",
+    "continent": "North America"
+  },
+  {
+    "country": "Curaçao",
+    "city": "Willemstad",
+    "latitude": 12.1,
+    "longitude": -68.916667,
+    "flag": "CW",
+    "continent": "North America"
+  },
+  {
+    "country": "Lithuania",
+    "city": "Vilnius",
+    "latitude": 54.68333333333333,
+    "longitude": 25.316667,
+    "flag": "LT",
+    "continent": "Europe"
+  },
+  {
+    "country": "Luxembourg",
+    "city": "Luxembourg",
+    "latitude": 49.6,
+    "longitude": 6.116667,
+    "flag": "LU",
+    "continent": "Europe"
+  },
+  {
+    "country": "Macedonia",
+    "city": "Skopje",
+    "latitude": 42,
+    "longitude": 21.433333,
+    "flag": "MK",
+    "continent": "Europe"
+  },
+  {
+    "country": "Madagascar",
+    "city": "Antananarivo",
+    "latitude": -18.916666666666668,
+    "longitude": 47.516667,
+    "flag": "MG",
+    "continent": "Africa"
+  },
+  {
+    "country": "Malawi",
+    "city": "Lilongwe",
+    "latitude": -13.966666666666667,
+    "longitude": 33.783333,
+    "flag": "MW",
+    "continent": "Africa"
+  },
+  {
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "latitude": 3.1666666666666665,
+    "longitude": 101.7,
+    "flag": "MY",
+    "continent": "Asia"
+  },
+  {
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "latitude": 46.05,
+    "longitude": 14.516667,
+    "flag": "SI",
+    "continent": "Europe"
+  },
+  {
+    "country": "Solomon Islands",
+    "city": "Honiara",
+    "latitude": -9.433333333333334,
+    "longitude": 159.95,
+    "flag": "SB",
+    "continent": "Australia"
+  },
+  {
+    "country": "Somalia",
+    "city": "Mogadishu",
+    "latitude": 2.066666666666667,
+    "longitude": 45.333333,
+    "flag": "SO",
+    "continent": "Africa"
+  },
+  {
+    "country": "South Africa",
+    "city": "Pretoria",
+    "latitude": -25.7,
+    "longitude": 28.216667,
+    "flag": "ZA",
+    "continent": "Africa"
+  }
+]
