@@ -16,5 +16,7 @@ The solution takes a JSON file as a source for the city data, parses it and cons
     * service class that is in charge of constructing the hierarchy
     * `addDistinctNodes` checks if the city (the last element of the passed list) is already added, and calls the function to process the node list if not
     * `addNodesFromList` is a recursive function that checks if each node in the list is valid, and constructs it from the bottom up if it is. It *does not* add nodes unless all nodes in the list are valid, and it doesn't add nodes multiple times, so each node is logged once
-5. `Location`
-    * basic class representing a node in the hierarchy
+5. `GeoLocation`
+    * interface representing the location node
+6. `Location`
+    * basic class representing a node in the hierarchy, implements the `GeoLocation` interface
