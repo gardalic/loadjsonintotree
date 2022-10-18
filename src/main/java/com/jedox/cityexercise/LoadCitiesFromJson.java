@@ -2,6 +2,7 @@ package com.jedox.cityexercise;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -20,11 +21,11 @@ public class LoadCitiesFromJson implements LoadCitiesFromFile {
     @Override
     public void loadCitiesFromFile(String filename, List<String> columnNames) {
         ObjectMapper mapper = new ObjectMapper();
-        try (InputStream is = getClass().getClassLoader().getResourceAsStream(filename)) {
+        try (InputStream is = new FileInputStream(filename)) {
             // mapping to Objects because file can have a different structure than existing classes (required for direct mapping)
             Object[] cities = mapper.readValue(is, Object[].class);
             for (Object o : cities) {
-                List<GeoLocation> nodes = getLocationList(columnNames, o);
+                List<GeoLocation> nodes = getLocationList(columnNames, o); // column names need to be in hierarchical order
                 locationService.addDistinctNodes(nodes);
             }
         } catch (IOException e) {
