@@ -38,7 +38,7 @@ public class LocationService {
                 addNode(nodes.get(idx), nodes.get(idx - 1));
                 return true;
             }
-            return false; // return here after making wrapper
+            return false;
         }
         if (addNodesFromList(nodes, idx + 1)) {
             if (locationAbsent(nodes.get(idx))) {

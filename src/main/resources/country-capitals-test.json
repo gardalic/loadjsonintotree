@@ -13,6 +13,14 @@
     "latitude": 9.55,
     "longitude": 44.05,
     "flag": "NULL",
+    "continent": "Africa"
+  },
+  {
+    "country": "Somaliland",
+    "city": "Hargeisa",
+    "latitude": 9.55,
+    "longitude": 44.05,
+    "flag": "NULL",
     "continent": "Antarctica"
   },
   {
